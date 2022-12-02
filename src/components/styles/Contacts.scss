@@ -1,0 +1,171 @@
+.ContactsWrapper {
+    background: #CEB3CB;
+    width: 100%;
+    height: 40vw;
+    margin-bottom: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactsColumns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65vw;
+}
+
+.ContactsLeft {
+    width: 20vw;
+    text-align: left;
+    .contactBox {
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2vw;
+            letter-spacing: 0.1vw;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-block-end: 1vw;
+            margin-block-start: 2vw;
+            text-align: left;
+        }
+        span {
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4vw;
+            color: #FFFFFF; 
+        }
+    }
+}
+
+.ContactsRight {
+    width: 40vw;
+    text-align: left;
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2vw;
+        letter-spacing: 0.1vw;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: left;
+        margin-block-end: 0.5vw;
+        margin-block-start: 0;
+    }
+    span {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4vw;
+        color: #FFFFFF; 
+
+    }
+    .inputsWrapper {
+        margin-top: 1vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            border: 0.1vw solid #FFFFFF;
+            background: none;
+            width: 18vw;
+            height: 3vw;
+            margin-bottom: 1.5vw;
+            color: #FFFFFF;
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1vw;
+            padding-left: 1vw;
+        }
+        input::placeholder {
+            color: white;
+        }
+    }
+    textarea {
+        width: 39vw;
+        height: 6vw;
+        border: 0.1vw solid #FFFFFF;
+        background: none;
+        margin-bottom: 1.5vw;
+        color: #FFFFFF;
+        font-family: 'Cormorant Garamond';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1vw;
+        padding-left: 1vw;
+        padding-top: 1vw;
+        margin-bottom: 1vw;
+        resize: none;
+    }
+    textarea::placeholder{
+        color: white;
+    }
+    button {
+        border: 0.1vw solid #FFFFFF;
+        background: none;
+        width: 16vw;
+        height: 3vw;
+        color: #FFFFFF;
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #BA9FB7;
+        transition: all ease 0.3s;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .ContactsWrapper {
+        height: 85vw;
+    }
+    .ContactsColumns{
+        flex-wrap: wrap;
+        width: 70vw;
+        .ContactsLeft {
+            width: 70vw;
+            display: flex;
+            justify-content: space-between;
+            .contactBox span{
+                font-size: 2.2vw;
+            }
+            .contactBox p{
+                font-size: 2.2vw;
+            }
+        }
+        .ContactsRight {
+            width: 70vw;
+            p, span{
+                font-size: 2.2vw;
+            }
+            .inputsWrapper {
+                input {
+                    width: 33vw;
+                    height: 6vw;
+                    font-size: 2vw;
+                }
+            }
+            textarea {
+                width: 68.8vw;
+                height: 11vw;
+                font-size: 2vw;
+            }
+            button {
+                width: 29vw;
+                height: 6vw;
+                font-size: 2vw;
+            }
+        } 
+    }
+}

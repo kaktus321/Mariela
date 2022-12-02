@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vw;
+}
+
+.columnsWrapper {
+    width: 80vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightColumn {
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #B08EAD;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+        list-style: none; 
+        cursor: pointer;
+    }
+    .cartButton {
+        margin-left: 3vw;
+        background: none;
+        cursor: pointer;
+        border: none;
+        width: 2vw;
+        img {
+            cursor: pointer;
+            width: 1.3vw;
+        }
+    }
+}
+
+.leftColumn {
+    img {
+        cursor: pointer;
+        width: 8vw;
+    }
+}

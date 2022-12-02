@@ -1,0 +1,79 @@
+.SubscribeWrapper {
+    width: 40vw;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+    text-align: center;
+    span:nth-child(1) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1vw;
+        color: #B99BB6;
+    }
+    span:nth-child(3) {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5vw;
+        color: #5F4D5D;
+    }
+    form {
+        input {
+            border: 0.1vw solid #CEB3CB;
+            background: none;
+            width: 12vw;
+            height: 3vw;
+            margin-bottom: 1.5vw;
+            color: #CEB3CB;
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1vw;
+            padding-left: 1vw;
+        }
+        input::placeholder {
+            color: #CEB3CB;
+        }
+        button {
+            border: 0.1vw solid #CEB3CB;
+            background: #CEB3CB;
+            width: 12vw;
+            cursor: pointer;
+            height: 3.2vw;
+            margin-bottom: 1.5vw;
+            color: #FFFFFF;
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1vw;
+        }
+        button:hover {
+            background: #BA9FB7;
+            transition: all ease 0.3s;
+            border: 0.1vw solid #CEB3CB;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .SubscribeWrapper {
+        width: 80vw;
+        span:nth-child(1) {
+            font-size: 3vw;
+        }
+        span:nth-child(3) {
+            font-size: 3.5vw;
+        }
+        form input {
+            width: 23vw;
+            height: 5vw;
+            font-size: 2vw;
+        }
+        form button {
+            width: 23vw;
+            height: 5vw;
+            font-size: 2vw;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapperAmazon {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5vw auto;
+  }
+  .cards {
+    width: 25vw;
+    .imageBox img{
+      width: 25vw;
+    }
+  }
+  .details {
+    text-align: center;
+  }
+  .details p:nth-child(1) {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8vw;
+    color: #5F4D5D;
+    margin-bottom: 0.5vw;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .details p:nth-child(2) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #B0B0B0;
+    margin-bottom: 0.5vw;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .details button {
+    width: 20vw;
+    height: 2vw;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #FFFFFF;
+    background: #CEB3CB;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.2vw;
+    margin-bottom: 3vw;
+  }
+
+.details button:focus {
+  background: #ffffff;
+  color: #CEB3CB;
+  transition: all 0.3s ease;
+}
+
+.details button:hover {
+  background: #BA9FB7;
+  transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 600px){
+  .wrapperAmazon {
+    width: 80vw;
+    .wrapperCard {
+      width: 35vw;
+      .cards {
+        width: 35vw;
+        .details p:nth-child(1){
+          font-size: 3.8vw;
+        }
+        .details p:nth-child(2){
+          font-size: 2.0vw;
+        }
+        .details button{
+          width: 35vw;
+          height: 3vw;
+          font-size: 2.2vw;
+        }
+        .imageBox {
+          width: 35vw;
+          img {
+            width: 35vw;
+          }
+        }
+      }
+    }
+  }
+}

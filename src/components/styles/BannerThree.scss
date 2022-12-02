@@ -1,0 +1,48 @@
+.bannerWrapper {
+    margin-top: 5vw;
+    background: #CEB3CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vw;
+    img {
+        width: 60vw;
+        position: relative;
+    }
+    .textBlockTH {
+        position: absolute;
+        left: 56vw;
+        width: 20vw;
+        z-index: 11;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 400;
+        text-align: left;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        span {
+            font-family: 'Roboto';
+            font-size: 1vw;
+            text-transform: uppercase; 
+            letter-spacing: 0.2vw;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        h6 {
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.4vw;
+            margin-block-start: 2vw;
+            margin-block-end: 2vw;
+        }
+        .buyNow {
+            color: #FFFFFF;
+            font-family: 'Roboto';
+            font-size: 1vw;
+            text-transform: uppercase; 
+            letter-spacing: 0.2vw;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+footer {
+    width: 100%;
+    height: 10vw;
+    background-color: #C9ADC6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterWrapper {
+    width: 80vw;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40vw;
+        list-style: none; 
+        cursor: pointer;
+        :nth-child(1) {
+            width: 7vw;
+        }
+    }
+}
+
+.Social {
+    img {
+        width: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .FooterWrapper ul :nth-child(1) {
+        width: 15vw;
+    }
+    .FooterWrapper {
+        font-size: 2.2vw;
+        ul {
+            width: 70vw;
+        }
+    }
+    .Social img {
+        width: 3vw;
+    }
+}
