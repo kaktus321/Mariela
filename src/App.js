@@ -43,7 +43,7 @@ function App() {
         <BannerThree />
         {show ? (
         <Amazon handleClick={handleClick} />
-           ) : (
+          ) : (
         <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
           )}
         <Contacts />
