@@ -80,6 +80,7 @@
         width: 40vw !important;
         list-style: none !important; 
         cursor: pointer !important;
+        color: #B08EAD !important;
     }
     .cart, .cartButton {
         margin-left: 3vw !important;
@@ -87,6 +88,7 @@
         cursor: pointer !important;
         border: none !important;
         width: 2vw !important;
+        color: #B08EAD !important;
         img {
             cursor: pointer !important;
             width: 1.3vw !important;
@@ -107,6 +109,36 @@ header {
   z-index: 22 !important;
   background-color: #ffff !important;
   height: 6vw !important;
+  .css-130f8nx {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 35vw !important;
+    font-family: 'Cormorant Garamond' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 1.2vw !important;
+    color: #B08EAD !important;
+    ul {
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 40vw !important;
+        list-style: none !important; 
+        cursor: pointer !important;
+        color: #B08EAD !important;
+    }
+    .cart, .cartButton {
+        margin-left: 3vw !important;
+        background: none !important;
+        cursor: pointer !important;
+        border: none !important;
+        width: 2vw !important;
+        color: #B08EAD !important;
+        img {
+            cursor: pointer !important;
+            width: 1.3vw !important;
+        }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -228,5 +260,5 @@ header {
 }
 
 .css-i6s8oy {
-  background-color: black !important;
+  background-color: white !important;
 }
