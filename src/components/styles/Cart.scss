@@ -6,7 +6,7 @@
 .wrapperCart {
   margin-top: 6vw;
   background-color: white;
-  min-height: 50vw;
+  min-height: 50vw !important;
   z-index: 22;
   overflow: auto;
 }
@@ -105,6 +105,7 @@
 @media screen and (max-width: 600px) {
   .wrapperCart {
     margin-top: 10vw;
+    min-height: 50vw;
     .cartBox {
       width: 75vw;
       .cartImg {
