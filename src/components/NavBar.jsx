@@ -1,5 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -33,7 +34,7 @@ function DrawerAppBar({setShow, size}, props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', background: 'white' }}>
           <div className="cartBTN">
             <span className="myShop" onClick={() => setShow(true)} >
-                <img src={logo} alt="" />
+                <Link to='/'><img src={logo} alt="" /></Link>
               </span>
           </div>
       <Divider />
@@ -67,7 +68,7 @@ function DrawerAppBar({setShow, size}, props) {
             <MenuIcon />
           </IconButton>
           <span className="myShop" onClick={() => setShow(true)} >
-                <img src={logo} alt="" />
+              <Link to='/'><img src={logo} alt="" /></Link>
             </span>
           <Typography
             variant="h6"
@@ -81,7 +82,7 @@ function DrawerAppBar({setShow, size}, props) {
                 {item}
               </Button>
             ))}
-            <button className="cart cartButton" onClick={() => setShow(false)}> <img src={cart} alt="" /> </button>
+            <button className="cart cartButton" onClick={() => setShow(false)}> <Link to='/cart'><img src={cart} alt="" /></Link> </button>
                 <span>{size}</span>
           </Box>
         </Toolbar>

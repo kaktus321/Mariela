@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router';
 import './App.css';
-import About from './components/About';
-import Banner from './components/Banner';
-import BannerThree from './components/BannerThree';
-import BannerTwo from './components/BannerTwo';
-import Learn from './components/Learn';
-import NavBar from './components/NavBar' 
-import Amazon from './components/Amazon' 
+import NavBar from './components/NavBar'  
 import Cart from './components/cart'; 
-import Contacts from './components/Contacts';
-import Subscribe from './components/Subscribe';
-import Info from './components/Info';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage'
 
 
 function App() {
@@ -35,21 +28,12 @@ function App() {
 
   return (
     <div className="App">
-        <NavBar setShow={setShow} size={cart.length} />
-        <Banner />
-        <Learn />
-        <BannerTwo />
-        <About />
-        <BannerThree />
-        {show ? (
-        <Amazon handleClick={handleClick} />
-          ) : (
-        <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
-          )}
-        <Contacts />
-        <Subscribe />
-        <Info />
-        <Footer />
+    <NavBar setShow={setShow} size={cart.length} />
+      <Routes>
+          <Route path='/' element={<HomePage handleClick={handleClick}/>} />
+          <Route path='/cart' element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />} />
+      </Routes>
+    <Footer />
     </div>
   );
 }
