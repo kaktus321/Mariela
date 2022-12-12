@@ -112,7 +112,7 @@ header {
   .css-130f8nx {
     display: flex !important;
     justify-content: space-between !important;
-    width: 35vw !important;
+    width: 35vw;
     font-family: 'Cormorant Garamond' !important;
     font-style: normal !important;
     font-weight: 400 !important;
@@ -183,9 +183,6 @@ header {
   }
   .css-1kkpk3h-MuiButtonBase-root-MuiButton-root {
     display: none !important;
-  }
-  .css-130f8nx {
-    width: 2vw !important;
   }
   .css-hyum1k-MuiToolbar-root{
     background-color: white !important;
