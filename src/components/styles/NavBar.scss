@@ -216,6 +216,12 @@ header {
     }
     .cartButton {
       display: block;
+      a img {
+        width: 6vw !important;
+      }
+      span {
+        font-size: 4vw !important;
+      }
     }
   }
   .css-i6s8oy {
