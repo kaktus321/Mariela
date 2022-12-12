@@ -264,6 +264,9 @@ header {
 }
 
 .css-5poeop {
+  background-color: none !important;
+  color: #B08EAD !important;
+  transition: none !important;
   box-shadow: none !important;
   height: 5vw !important;
 }
@@ -271,5 +274,9 @@ header {
 .css-130f8nx {
   button {
     color: #B08EAD !important;
+    font-size: 1vw;
+    min-width: 0;
+    padding: 0;
+    border-radius: 0;
   }
 }
